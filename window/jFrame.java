@@ -9,12 +9,10 @@ public class jFrame extends JFrame {
     public jFrame() throws IOException {
         setTitle("Calculator");
         setBounds(150, 100, 300, 450);
-        setIconImage(ImageIO.read(new File("window/icon.png")));
-        add(new jTextArea("0"));
+        setIconImage(ImageIO.read(new File("resources/icon.png")));
 
-        JInternalFrame jInternalFrame = new JInternalFrame();
-        jInternalFrame.setVisible(true);
-        jInternalFrame.setBounds(0,0,100,200);
+        add(new jPanel());
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }

@@ -6,10 +6,9 @@ import java.awt.*;
 public class jTextArea extends JTextArea {
     public jTextArea(String text) {
         super(text);
-        setBounds(0,0,30, 45);
+        setBounds(0,0,290, 150);
         setBackground(Color.GRAY);
         setBorder(BorderFactory.createMatteBorder(10,10,10,10, Color.DARK_GRAY));
-        setFont(Font.getFont("FOREGROUND"));
         setVisible(true);
     }
 }
